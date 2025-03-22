@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\Tubes1Stima\\Tubes1_uyaya\\src\\alternative-bot\\alt-bot-1\\AltBot1.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\tubes1-if2211-starter-pack-1.0\\AltBot1\\AltBot1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\Tubes1Stima\\Tubes1_uyaya\\src\\alternative-bot\\alt-bot-1\\AltBot1.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\tubes1-if2211-starter-pack-1.0\\AltBot1\\AltBot1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\Tubes1Stima\\Tubes1_uyaya\\src\\alternative-bot\\alt-bot-1\\AltBot1.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\tubes1-if2211-starter-pack-1.0\\AltBot1\\AltBot1.csproj",
         "projectName": "AltBot1",
-        "projectPath": "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\Tubes1Stima\\Tubes1_uyaya\\src\\alternative-bot\\alt-bot-1\\AltBot1.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\tubes1-if2211-starter-pack-1.0\\AltBot1\\AltBot1.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\Tubes1Stima\\Tubes1_uyaya\\src\\alternative-bot\\alt-bot-1\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\SEMESTER 4\\tubes1-if2211-starter-pack-1.0\\AltBot1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +41,8 @@
         "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
@@ -64,30 +64,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

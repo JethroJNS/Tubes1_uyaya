@@ -1,0 +1,10 @@
+{
+  "name": "AltBot1",
+  "version": "1.0",
+  "authors": ["Abrar A. W.", "Buege M. P.", "Jethro J. N. S."],
+  "description": "ini alt bot 1",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "alternative-bot", "alternative-bot", "{2081E68A-3CD6-4C70-C885-9C7D581E18C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltBot1", "alternative-bot\alt-bot-1\AltBot1.csproj", "{99FD67D9-6B9C-75F5-2134-8BE9E84DD3D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99FD67D9-6B9C-75F5-2134-8BE9E84DD3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FD67D9-6B9C-75F5-2134-8BE9E84DD3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FD67D9-6B9C-75F5-2134-8BE9E84DD3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FD67D9-6B9C-75F5-2134-8BE9E84DD3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99FD67D9-6B9C-75F5-2134-8BE9E84DD3D7} = {2081E68A-3CD6-4C70-C885-9C7D581E18C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC4D0D55-7FAC-42B7-8675-5A7B270AC1EC}
+	EndGlobalSection
+EndGlobal
