@@ -17,12 +17,12 @@ public class AltBot1 : Bot
 
     public override void Run()
     {
-        BodyColor = Color.Blue;
-        GunColor = Color.Red;
-        RadarColor = Color.Yellow;
-        TracksColor = Color.Gray;
-        TurretColor = Color.DarkRed;
-        ScanColor = Color.Green;
+        BodyColor = Color.Black;
+        GunColor = Color.Black;
+        RadarColor = Color.Black;
+        TracksColor = Color.Black;
+        TurretColor = Color.Black;
+        ScanColor = Color.Black;
 
         AdjustGunForBodyTurn = true;
         AdjustRadarForGunTurn = true;
@@ -66,7 +66,17 @@ public class AltBot1 : Bot
     {
         // var distance = DistanceTo(e.X, e.Y);
         if (e.IsRammed){
-            if (e.Energy <= 100 && Energy >0){
+            if (e.Energy <= 30 && Energy >65){
+                TurnToFaceTarget(e.X, e.Y);
+                SetFire(3);
+                Forward(40);
+            }
+            else if(e.Energy <= 20 && Energy >40){
+                TurnToFaceTarget(e.X, e.Y);
+                SetFire(3);
+                Forward(40);
+            }
+            else if (e.Energy <= 10 && Energy >30){
                 TurnToFaceTarget(e.X, e.Y);
                 SetFire(3);
                 Forward(40);
