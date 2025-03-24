@@ -78,4 +78,9 @@
 6. **Referensi API:**
    - Buka `Robocode.TankRoyale.BotApi`
 
+---
+## Author
+**Buege Mahara Putra  13523037**  
+**Abrar Abhirama Widyadhana  13523038**  
+**Jethro Jens Norbert Simatupang  13523081**
 
