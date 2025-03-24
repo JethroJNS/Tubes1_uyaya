@@ -61,7 +61,7 @@ public class alt_bot_3 : Bot
             SetFire(1);
         }
     }
-        public override void OnHitWall(HitWallEvent e)
+    public override void OnHitWall(HitWallEvent e)
     {
         SetTurnLeft(-100);
         SetTurnRight(-100);
