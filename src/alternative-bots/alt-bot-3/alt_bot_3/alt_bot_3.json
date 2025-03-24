@@ -1,7 +1,7 @@
 {
   "name": "alt_bot_3",
   "version": "1.0",
-  "authors": ["IRK Lab Assistant"],
+  "authors": ["Abrar A. W.", "Buege M. P.", "Jethro J. N. S."],
   "description": "A bot that moves zig zag and fire randomly",
   "homepage": "",
   "countryCodes": ["id"],
