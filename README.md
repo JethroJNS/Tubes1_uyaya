@@ -1,5 +1,12 @@
 # Penjelasan Algoritma Greedy pada Bot
 
+## Daftar Isi
+1. [Main Bot](#main-bot)
+2. [Alternatif Bot 1](#alternatif-bot-1)
+3. [Alternatif Bot 2](#alternatif-bot-2)
+4. [Alternatif Bot 3](#alternatif-bot-3)
+5. [Requirement Program dan Instalasi](#requirement-program-dan-instalasi)
+
 ## Main Bot
 - **Pergerakan:** Bot menjaga jarak optimal (menjauh <150 unit, mendekat >400 unit, orbit di jarak tengah).  
   *Heuristik:* Menjaga keseimbangan serangan dan pertahanan.
@@ -17,7 +24,7 @@
   *Heuristik:* Maksimalkan pengamatan dan hindari peluru.
 - **Pemindaian:** Kunci target pertama.  
   *Heuristik:* Minimalkan peluang lawan kabur.
-- **Serangan:** Daya tembak 3 (>200 unit), 2 (200-400 unit), 1 (<400 unit).  
+- **Serangan:** Daya tembak 3 (<200 unit), 2 (200-400 unit), 1 (>400 unit).  
   *Heuristik:* Sesuaikan daya untuk akurasi dan efisiensi.
 - **Tabrakan Lawan:** Arahkan meriam ke lawan, tembak daya maksimum, lalu tabrak.  
   *Heuristik:* Manfaatkan lawan lemah.
@@ -49,4 +56,26 @@
   *Heuristik:* Hindari serangan sambil serang balik.
 - **Menghindari Dinding:** Putar 100° kiri-kanan.  
   *Heuristik:* Cepat keluar tanpa mundur.
+
+## Requirement Program dan Instalasi
+1. **Instalasi .NET 6.0 untuk bot C#:**
+   - **Download .NET SDK 6.0:** [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+   - **Cek instalasi:**
+     ```bash
+     dotnet --version
+     ```
+2. **Download Starter Pack:** [Tubes Starter Pack](https://github.com/Ariel-HS/tubes1-if2211-starter-pack/releases/tag/v1.0)
+3. **Unduh dan jalankan game engine:**
+   ```bash
+   java -jar robocode-tankroyale-gui-0.30.0.jar
+   ```
+4. **Setup Config:**
+   - Klik **Config** → **Bot Root Directories**
+   - Masukkan directory berisi folder bot.
+5. **Jalankan Battle:**
+   - Klik **Battle** → **Start Battle**
+   - Pilih bot, lalu **Boot →** dan **Add →**
+6. **Referensi API:**
+   - Buka `Robocode.TankRoyale.BotApi`
+
 
