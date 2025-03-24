@@ -127,7 +127,6 @@ public class main_bot : Bot
         }
         else if (eDistance > 400)
         {
-            // too far
             moveForward = 100;
         }
         else
@@ -141,12 +140,12 @@ public class main_bot : Bot
     }
     private void TurnToFaceTarget(double x, double y)
     {
-       double angleToTarget = DirectionTo(x, y); // Ambil arah absolut ke target
-        double gunTurn = NormalizeRelativeAngle(angleToTarget - GunDirection); // Sesuaikan arah meriam
-        double bodyTurn = NormalizeRelativeAngle(angleToTarget - Direction); // Sesuaikan arah tank
+       double angleToTarget = DirectionTo(x, y); 
+        double gunTurn = NormalizeRelativeAngle(angleToTarget - GunDirection); 
+        double bodyTurn = NormalizeRelativeAngle(angleToTarget - Direction); 
 
         SetTurnGunLeft(gunTurn); 
-        SetTurnLeft(bodyTurn); // Tank ikut menghadap target juga
+        SetTurnLeft(bodyTurn); 
     
     }
 }

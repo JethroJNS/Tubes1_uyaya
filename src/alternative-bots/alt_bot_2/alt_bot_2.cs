@@ -13,10 +13,10 @@ public class alt_bot_2 : Bot
 
     public override void Run()
     {
-        BodyColor = Color.Yellow;
-        TurretColor = Color.Black;
-        RadarColor = Color.Yellow;
-        ScanColor = Color.White;
+        BodyColor = Color.Green;
+        TurretColor = Color.Green;
+        RadarColor = Color.Green;
+        ScanColor = Color.Green;
 
         AdjustRadarForGunTurn = true;
         AdjustGunForBodyTurn = true;
@@ -65,13 +65,13 @@ public class alt_bot_2 : Bot
     {
         Console.WriteLine("Ouch! I hit a bot at " + e.X + ", " + e.Y);
 
-        if (e.IsRammed) // Jika tabrakan terjadi karena kita menabrak lawan
+        if (e.IsRammed) 
         {
-            SetBack(50); // Mundur agar tidak terjebak
-            SetTurnRight(30); // Putar sedikit untuk menghindari stuck
+            SetBack(50); 
+            SetTurnRight(30); 
         }
 
-        if (GunHeat == 0 && Energy > 1.0) // Jika memungkinkan, tembak
+        if (GunHeat == 0 && Energy > 1.0) 
         {
             SetFire(1.0);
         }
@@ -84,8 +84,8 @@ public class alt_bot_2 : Bot
         Console.WriteLine("Ouch! I hit a wall, must turn back!");
         
         Stop();
-        SetBack(50); // Mundur sedikit
-        SetTurnRight(90); // Berbelok agar tidak kembali ke arah yang sama
+        SetBack(50); 
+        SetTurnRight(90); 
         Go();
     }
 }

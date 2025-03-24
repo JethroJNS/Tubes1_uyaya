@@ -6,18 +6,14 @@ using Robocode.TankRoyale.BotApi.Events;
 
 public class alt_bot_1 : Bot
 {
-    private int targetBotId = -1; // Track a specific enemy bot
     private bool radarSwingRight = true;
-    // The main method starts our bot
     static void Main(string[] args)
     {
         new alt_bot_1().Start();
     }
 
-    // Constructor, which loads the bot settings file
     alt_bot_1() : base(BotInfo.FromFile("alt_bot_1.json")) { }
 
-    // Called when a new round is started -> initialize and start scanning
     public override void Run()
     {
         // Set colors
@@ -28,7 +24,6 @@ public class alt_bot_1 : Bot
         TurretColor = Color.White;
         ScanColor = Color.White;
 
-        // Make gun and radar turn together
         AdjustRadarForGunTurn = false;
         AdjustGunForBodyTurn = true;
 
@@ -38,11 +33,8 @@ public class alt_bot_1 : Bot
             for (int i = 0; i< 3 ;i++){
                 SetTurnGunRight(double.PositiveInfinity);
                 SetTurnLeft(360);
-                // Limit our speed to 5
                 MaxSpeed = 7;
-                // Start moving (and turning)
                 Forward(100);
-
             }
         }
         
@@ -69,7 +61,6 @@ public class alt_bot_1 : Bot
 
     }
 
-    // We scanned another bot -> lock gun+radar to track it
     public override void OnScannedBot(ScannedBotEvent e)
     {
             // Keep gun+radar locked on the target
@@ -109,11 +100,11 @@ public class alt_bot_1 : Bot
     }
     private void TurnToFaceTarget(double x, double y)
     {
-        double angleToTarget = DirectionTo(x, y); // Ambil arah absolut ke target
-        double gunTurn = NormalizeRelativeAngle(angleToTarget - GunDirection); // Sesuaikan arah meriam
-        double bodyTurn = NormalizeRelativeAngle(angleToTarget - Direction); // Sesuaikan arah tank
+        double angleToTarget = DirectionTo(x, y);
+        double gunTurn = NormalizeRelativeAngle(angleToTarget - GunDirection); 
+        double bodyTurn = NormalizeRelativeAngle(angleToTarget - Direction); 
 
         SetTurnGunLeft(gunTurn); 
-        SetTurnLeft(bodyTurn); // Tank ikut menghadap target juga
+        SetTurnLeft(bodyTurn); 
     }
 }

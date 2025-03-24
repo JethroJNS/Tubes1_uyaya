@@ -6,20 +6,15 @@ using Robocode.TankRoyale.BotApi.Events;
 
 public class alt_bot_3 : Bot
 {
-    private int targetBotId = -1; // Track a specific enemy bot
-    // The main method starts our bot
     static void Main(string[] args)
     {
         new alt_bot_3().Start();
     }
 
-    // Constructor, which loads the bot settings file
     alt_bot_3() : base(BotInfo.FromFile("alt_bot_3.json")) { }
 
-    // Called when a new round is started -> initialize and start scanning
     public override void Run()
     {
-        // Set colors
         BodyColor = Color.Yellow;
         GunColor = Color.Yellow;
         RadarColor = Color.Yellow;
@@ -27,7 +22,6 @@ public class alt_bot_3 : Bot
         TurretColor = Color.Yellow;
         ScanColor = Color.Yellow;
     
-        // Make gun and radar turn together
         AdjustGunForBodyTurn = true;
         AdjustRadarForGunTurn = true;
         AdjustRadarForBodyTurn = true;

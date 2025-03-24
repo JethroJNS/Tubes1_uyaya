@@ -2,7 +2,7 @@
   "name": "alt_bot_3",
   "version": "1.0",
   "authors": ["IRK Lab Assistant"],
-  "description": "A bot that drives forward and backward, and fires a bullet",
+  "description": "A bot that moves zig zag and fire randomly",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 9.0",
