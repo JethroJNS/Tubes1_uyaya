@@ -5,8 +5,8 @@
 2. [Alternatif Bot 1](#alternatif-bot-1)
 3. [Alternatif Bot 2](#alternatif-bot-2)
 4. [Alternatif Bot 3](#alternatif-bot-3)
-5. [Struktur](#struktur)
-6. [Requirement Program dan Instalasi](#requirement-program-dan-instalasi)
+5. [Requirement Program dan Instalasi](#requirement-program-dan-instalasi)
+6. [Author](#author)
 
 ## Main Bot
 - **Pergerakan:** Bot menjaga jarak optimal (menjauh <150 unit, mendekat >400 unit, orbit di jarak tengah).  
@@ -57,42 +57,6 @@
   *Heuristik:* Hindari serangan sambil serang balik.
 - **Menghindari Dinding:** Putar 100° kiri-kanan.  
   *Heuristik:* Cepat keluar tanpa mundur.
-
-## Struktur
-```ssh
-├── src
-│   ├── alternative-bots
-│   │   ├── alt-bot-1
-│   │   │   └── alt_bot_1
-│   │   │       ├── alt_bot_1.cmd
-│   │   │       ├── alt_bot_1.cs
-│   │   │       ├── alt_bot_1.csproj
-│   │   │       ├── alt_bot_1.json
-│   │   │       └── alt_bot_1.sh
-│   │   ├── alt-bot-2
-│   │   │   └── alt_bot_2
-│   │   │       ├── alt_bot_2.cmd
-│   │   │       ├── alt_bot_2.cs
-│   │   │       ├── alt_bot_2.csproj
-│   │   │       ├── alt_bot_2.json
-│   │   │       └── alt_bot_2.sh
-│   │   └── alt-bot-3
-│   │       └── alt_bot_3
-│   │           ├── alt_bot_3.cmd
-│   │           ├── alt_bot_3.cs
-│   │           ├── alt_bot_3.csproj
-│   │           ├── alt_bot_3.json
-│   │           └── alt_bot_3.sh
-│   └── main-bot
-│       └── main_bot
-│           ├── main_bot.cmd
-│           ├── main_bot.cs
-│           ├── main_bot.csproj
-│           ├── main_bot.json
-│           └── main_bot.sh
-└── doc
-    └── laporan.pdf
-```
 
 ## Requirement Program dan Instalasi
 1. **Instalasi .NET 6.0 untuk bot C#:**
