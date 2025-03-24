@@ -1,0 +1,10 @@
+{
+  "name": "alt_bot_1",
+  "version": "1.0",
+  "authors": ["Abrar A. W.", "Buege M. P.", "Jethro J. N. S."],
+  "description": "A bot that keep spinning and locking onto first bot scanned",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}
