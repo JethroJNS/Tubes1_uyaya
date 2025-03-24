@@ -58,28 +58,7 @@
 - **Menghindari Dinding:** Putar 100° kiri-kanan.  
   *Heuristik:* Cepat keluar tanpa mundur.
 
-## Requirement Program dan Instalasi
-1. **Instalasi .NET 6.0 untuk bot C#:**
-   - **Download .NET SDK 6.0:** [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-   - **Cek instalasi:**
-     ```bash
-     dotnet --version
-     ```
-2. **Download Starter Pack:** [Tubes Starter Pack](https://github.com/Ariel-HS/tubes1-if2211-starter-pack/releases/tag/v1.0)
-3. **Unduh dan jalankan game engine:**
-   ```bash
-   java -jar robocode-tankroyale-gui-0.30.0.jar
-   ```
-4. **Setup Config:**
-   - Klik **Config** → **Bot Root Directories**
-   - Masukkan directory berisi folder bot.
-5. **Jalankan Battle:**
-   - Klik **Battle** → **Start Battle**
-   - Pilih bot, lalu **Boot →** dan **Add →**
-6. **Referensi API:**
-   - Buka `Robocode.TankRoyale.BotApi`
-
-### Structure
+## Struktur
 ```ssh
 ├── src
 │   ├── alternative-bots
@@ -113,9 +92,30 @@
 │           └── main_bot.sh
 └── doc
     └── laporan.pdf
+```
+
+## Requirement Program dan Instalasi
+1. **Instalasi .NET 6.0 untuk bot C#:**
+   - **Download .NET SDK 6.0:** [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+   - **Cek instalasi:**
+     ```bash
+     dotnet --version
+     ```
+2. **Download Starter Pack:** [Tubes Starter Pack](https://github.com/Ariel-HS/tubes1-if2211-starter-pack/releases/tag/v1.0)
+3. **Unduh dan jalankan game engine:**
+   ```bash
+   java -jar robocode-tankroyale-gui-0.30.0.jar
+   ```
+4. **Setup Config:**
+   - Klik **Config** → **Bot Root Directories**
+   - Masukkan directory berisi folder bot.
+5. **Jalankan Battle:**
+   - Klik **Battle** → **Start Battle**
+   - Pilih bot, lalu **Boot →** dan **Add →**
+6. **Referensi API:**
+   - Buka `Robocode.TankRoyale.BotApi`
 
 
----
 ## Author
 **Buege Mahara Putra  13523037**  
 **Abrar Abhirama Widyadhana  13523038**  
